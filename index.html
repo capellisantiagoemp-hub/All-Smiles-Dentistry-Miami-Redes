@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Social media proposal | All Smiles Dentistry Miami</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#9acfc9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;1,500;1,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0c2b38; --ink-2:#17475a; --mute:#41606b;
+  --mint:#9acfc9; --mint-2:#dff1ee; --sky:#00b5ff; --green:#3cc98b; --sand:#ead2b3; --paper:#fbfaf6;
+  --line:rgba(12,43,56,.14); --on-ink:#f4faf9; --on-ink-dim:rgba(244,250,249,.76);
+  --ease:cubic-bezier(.23,1,.32,1);
+  --r:22px; --gutter:clamp(18px,4.4vw,56px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-text-size-adjust:100%}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{width:min(1240px,100% - var(--gutter)*2);margin-inline:auto}
+.serif{font-family:Alegreya,Georgia,serif;font-weight:700;letter-spacing:-.01em}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px}
+
+/* header */
+.top{position:sticky;top:0;z-index:50;background:rgba(251,250,246,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:84px}
+.brand img{height:62px;width:auto}
+.steps{display:flex;gap:4px}
+.steps a{font-size:14px;font-weight:600;text-decoration:none;color:var(--mute);padding:11px 18px;border-radius:99px;transition:background .2s var(--ease),color .2s var(--ease)}
+.steps a b{font-weight:700;margin-right:8px;color:var(--ink-2)}
+.steps a.on{background:var(--mint-2);color:var(--ink)}
+@media (hover:hover) and (pointer:fine){.steps a:hover{background:var(--mint-2);color:var(--ink)}}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--mint-2) 0%,#cfe9e5 100%);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,5vw,72px);align-items:center;padding:clamp(40px,6vw,72px) 0 clamp(44px,6vw,80px)}
+.eyebrow{font-size:12.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.hero h1{font-size:clamp(46px,7vw,96px);line-height:.96;margin:18px 0 22px;text-wrap:balance}
+.hero h1 em{font-style:italic;font-weight:500;display:inline-block;padding-bottom:.08em;color:var(--ink-2)}
+.hero p.lead{font-size:clamp(17px,1.8vw,20px);color:var(--mute);max-width:46ch}
+.for{margin-top:24px;font-size:15.5px;color:var(--mute)}
+.for b{color:var(--ink);font-weight:700}
+.path{margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:660px}
+.path a{display:block;text-decoration:none;padding:16px 18px;border:1px solid var(--line);border-radius:var(--r);background:rgba(251,250,246,.7);transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s}
+.path a:active{transform:scale(.97)}
+.path small{display:block;font-size:12px;letter-spacing:.14em;color:var(--ink-2);font-weight:700}
+.path span{display:block;margin-top:4px;font-weight:600;font-size:15px;line-height:1.3}
+@media (hover:hover) and (pointer:fine){.path a:hover{transform:translateY(-3px);background:var(--paper);box-shadow:0 18px 36px -22px rgba(12,43,56,.5)}}
+.collage{position:relative;min-height:clamp(380px,46vw,600px)}
+.arch{position:absolute;right:0;top:0;width:78%;aspect-ratio:4/5;border-radius:999px 999px var(--r) var(--r);overflow:hidden;background:var(--mint);box-shadow:0 40px 80px -40px rgba(12,43,56,.5)}
+.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 100%}
+.disc{position:absolute;left:0;bottom:2%;width:42%;aspect-ratio:1;border-radius:50%;background:var(--sand);box-shadow:0 30px 60px -30px rgba(12,43,56,.4)}
+.dots{position:absolute;left:6%;top:6%;display:grid;grid-template-columns:repeat(3,22px);gap:12px}
+.dots i{display:block;width:22px;height:22px;border-radius:50%;background:var(--sky)}
+.dots i:nth-child(2n){background:var(--green)}.dots i:nth-child(3n){background:var(--mint)}
+
+/* sections */
+section.blk{padding:clamp(64px,9vw,120px) 0}
+#hoy{background:var(--paper)}
+#propuesta{background:var(--mint-2)}
+#material{background:var(--paper)}
+.sec-head{max-width:760px;margin-bottom:clamp(30px,5vw,56px)}
+.sec-head .eyebrow{display:block;margin-bottom:12px}
+.sec-head h2{font-size:clamp(36px,5.2vw,62px);line-height:1;text-wrap:balance}
+.sec-head p{margin-top:16px;color:var(--mute);max-width:58ch;font-size:clamp(16px,1.6vw,18px)}
+
+/* hoy */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:clamp(28px,4vw,48px)}
+.stat{padding:24px 22px 24px 0}
+.stat + .stat{padding-left:22px;border-left:1px solid var(--line)}
+.stat b{display:block;font-family:Alegreya,serif;font-weight:700;font-size:clamp(46px,5.4vw,74px);line-height:1}
+.stat b small{font-size:.5em;margin-left:4px;color:var(--ink-2)}
+.stat span{display:block;margin-top:8px;font-size:14.5px;color:var(--mute);line-height:1.35;max-width:22ch}
+.now{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(16px,2.4vw,32px);align-items:start}
+.col{display:grid;gap:clamp(16px,2.4vw,28px)}
+.shot{margin:0}
+.shot .win{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 30px 60px -40px rgba(12,43,56,.5);cursor:zoom-in;transition:transform .3s var(--ease),box-shadow .3s var(--ease);display:block;width:100%;padding:0}
+.shot .win:active{transform:scale(.985)}
+.shot .win img{width:100%;height:auto}
+@media (hover:hover) and (pointer:fine){.shot .win:hover{transform:translateY(-6px);box-shadow:0 40px 70px -36px rgba(12,43,56,.55)}}
+.shot figcaption{padding:16px 4px 0;display:grid;gap:4px}
+.shot figcaption b{font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--ink-2)}
+.shot figcaption span{font-size:16.5px;line-height:1.4}
+.shot figcaption small{font-size:14px;color:var(--mute)}
+.cad{border-radius:var(--r);background:var(--sand);padding:clamp(22px,3vw,32px);display:grid;gap:8px}
+.cad .eyebrow{color:var(--ink)}
+.cad h3{font-size:clamp(28px,3vw,38px);line-height:1.02}
+.cad p{font-size:15.5px;color:var(--ink-2)}
+.quote{border-radius:var(--r);background:var(--ink);color:var(--on-ink);padding:clamp(24px,3vw,36px);display:grid;gap:14px;align-content:start;position:relative}
+.quote .stars{color:#ffd45a;letter-spacing:.2em;font-size:18px}
+.quote blockquote{font-family:Alegreya,serif;font-size:clamp(22px,2.4vw,28px);line-height:1.25;font-weight:500}
+.quote cite{font-style:normal;font-size:14px;color:var(--on-ink-dim)}
+.quote cite b{color:var(--on-ink);font-weight:700}
+.quote small{font-size:12.5px;color:var(--on-ink-dim)}
+
+/* propuesta */
+.stage{display:grid;grid-template-columns:1fr minmax(320px,500px) 1fr;gap:clamp(24px,4vw,64px);align-items:center}
+.notes{display:grid;gap:34px}
+.note{max-width:300px}
+.notes.r .note{margin-left:auto}
+.note h3{font-family:Alegreya,serif;font-weight:700;font-size:28px;line-height:1.05;margin-bottom:8px}
+.note p{font-size:15.5px;color:var(--mute);line-height:1.5}
+.phone{position:relative;border-radius:clamp(44px,12vw,64px);padding:clamp(9px,2.6vw,13px);background:linear-gradient(145deg,#1d3b49,#05121a 60%);box-shadow:0 50px 90px -40px rgba(12,43,56,.75),0 0 0 1.5px rgba(12,43,56,.25);cursor:zoom-in;transition:transform .35s var(--ease);-webkit-tap-highlight-color:transparent;max-width:500px;margin-inline:auto;width:100%}
+.phone:active{transform:scale(.99)}
+.phone .screen{border-radius:clamp(34px,9.6vw,52px);overflow:hidden;background:var(--paper)}
+.phone .screen img{width:100%;height:auto}
+.phone .island{position:absolute;top:calc(clamp(9px,2.6vw,13px) + 10px);left:50%;transform:translateX(-50%);width:26%;height:clamp(18px,5vw,26px);border-radius:99px;background:#05121a}
+.phone .zoom{position:absolute;right:18px;bottom:18px;font-size:13px;font-weight:700;background:rgba(12,43,56,.92);color:var(--on-ink);padding:10px 16px;border-radius:99px}
+.rail-head{margin:clamp(56px,8vw,96px) 0 20px}
+.rail-head h3{font-size:clamp(30px,4vw,46px);line-height:1}
+.rail-head p{margin-top:10px;font-size:15px;color:var(--mute)}
+.rail-wrap{position:relative}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px var(--gutter) 22px;margin:0 calc(var(--gutter)*-1);scrollbar-width:thin;scrollbar-color:var(--ink) transparent;-webkit-overflow-scrolling:touch;scroll-padding-left:var(--gutter)}
+.rail::-webkit-scrollbar{height:6px}.rail::-webkit-scrollbar-thumb{background:var(--ink);border-radius:9px}
+.post{flex:0 0 clamp(236px,64vw,330px);scroll-snap-align:start;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--paper);cursor:zoom-in;padding:0;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.post:active{transform:scale(.98)}
+.post img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
+@media (hover:hover) and (pointer:fine){.post:hover{transform:translateY(-6px);box-shadow:0 34px 60px -32px rgba(12,43,56,.6)}}
+.arrows{display:none;gap:10px;margin-top:6px}
+@media (hover:hover) and (pointer:fine){.arrows{display:flex}}
+.arrows button{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:var(--paper);cursor:pointer;font-size:20px;transition:background .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
+.arrows button:hover{background:var(--ink);color:var(--on-ink)}
+.arrows button:active{transform:scale(.94)}
+
+/* material */
+.mat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,26px);align-items:start}
+.ph{margin:0}
+.ph button{display:block;width:100%;padding:0;border:0;background:var(--mint-2);cursor:zoom-in;border-radius:var(--r);overflow:hidden;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.ph button:active{transform:scale(.985)}
+.ph img{width:100%;height:auto}
+@media (hover:hover) and (pointer:fine){.ph button:hover{transform:translateY(-5px);box-shadow:0 32px 56px -30px rgba(12,43,56,.55)}}
+.ph figcaption{padding:12px 2px 0;font-size:15px;color:var(--mute)}
+.mat .ph:nth-child(3n+2){margin-top:clamp(0px,5vw,64px)}
+
+/* cierre */
+.close{background:var(--mint-2);padding:clamp(56px,8vw,100px) 0 40px}
+.close-card{position:relative;border-radius:clamp(24px,4vw,40px);padding:clamp(30px,6vw,76px);background:radial-gradient(800px 420px at 100% 0%,var(--ink-2),transparent 62%),linear-gradient(150deg,#12384a,var(--ink) 62%);color:var(--on-ink);display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,72px)}
+.close-card h2{font-size:clamp(38px,5.2vw,68px);line-height:.98;text-wrap:balance}
+.close-card h2 em{font-style:italic;font-weight:500;display:inline-block;padding-bottom:.08em;color:var(--mint)}
+.close-card p.lead{margin-top:20px;color:var(--on-ink-dim);max-width:46ch;font-size:clamp(15.5px,1.6vw,18px)}
+.svc{display:grid;align-content:start}
+.svc div{padding:22px 0;border-top:1px solid rgba(244,250,249,.22);font-size:15.5px;color:var(--on-ink-dim);line-height:1.5}
+.svc div:last-child{border-bottom:1px solid rgba(244,250,249,.22)}
+.svc b{display:block;color:var(--on-ink);font-family:Alegreya,serif;font-weight:700;font-size:28px;line-height:1.05;margin-bottom:6px}
+.sign{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;padding-top:30px;border-top:1px solid rgba(244,250,249,.22)}
+.sign p{font-size:15px;color:var(--on-ink-dim)}
+.sign b{display:block;color:var(--on-ink);font-size:19px;font-weight:700}
+.contact{list-style:none;display:flex;flex-wrap:wrap;gap:10px}
+.contact a{display:inline-flex;align-items:center;min-height:50px;padding:12px 24px;border-radius:99px;border:1px solid rgba(244,250,249,.4);font-weight:600;font-size:15px;text-decoration:none;overflow-wrap:anywhere;transition:background .2s var(--ease),color .2s var(--ease),transform .16s var(--ease)}
+.contact li:first-child a{background:var(--mint);color:var(--ink);border-color:var(--mint)}
+.contact a:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.contact a:hover{transform:translateY(-2px)}.contact li:not(:first-child) a:hover{background:rgba(244,250,249,.12)}}
+footer{padding:28px 0 52px;color:var(--mute);font-size:14px;display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
+
+/* lightbox */
+dialog{border:0;background:transparent;max-width:none;max-height:none;width:100%;height:100%;color:var(--on-ink)}
+dialog::backdrop{background:rgba(5,18,26,.93);backdrop-filter:blur(6px)}
+dialog .box{height:100%;overflow:auto;display:flex;justify-content:center;padding:72px 12px 40px;-webkit-overflow-scrolling:touch}
+dialog img{width:min(620px,100%);height:auto;border-radius:var(--r);align-self:flex-start;background:var(--paper)}
+dialog .x,dialog .nav{position:fixed;z-index:2;border-radius:50%;border:1px solid rgba(244,250,249,.3);background:rgba(12,43,56,.92);color:var(--on-ink);cursor:pointer;display:grid;place-items:center}
+dialog .x{top:14px;right:14px;width:48px;height:48px;font-size:24px}
+dialog .nav{top:50%;width:48px;height:48px;font-size:22px;transform:translateY(-50%)}
+dialog .prev{left:12px}dialog .next{right:12px}
+dialog .x:active{transform:scale(.94)}
+dialog .nav:active{transform:translateY(-50%) scale(.94)}
+@media (max-width:760px){dialog .nav{top:auto;bottom:18px;transform:none}dialog .nav:active{transform:scale(.94)}}
+dialog .cap{position:fixed;left:0;right:0;bottom:22px;text-align:center;font-size:13px;color:var(--on-ink-dim);pointer-events:none}
+@media (max-width:760px){dialog .cap{bottom:34px}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .hero .wrap{grid-template-columns:1fr}
+  .collage{max-width:520px;width:100%;margin-inline:auto;min-height:420px}
+  .stage{grid-template-columns:1fr;max-width:520px;margin-inline:auto}
+  .phone-col{order:-1}
+  .notes{gap:24px}.note{max-width:none}.notes.r .note{margin-left:0}
+  .now{grid-template-columns:1fr}
+  .close-card{grid-template-columns:1fr}
+}
+@media (max-width:760px){
+  .steps{display:none}
+  .brand img{height:52px}
+  .top .wrap{height:72px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){padding-left:0;border-left:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+  .path{grid-template-columns:1fr}
+  .path a{display:flex;align-items:baseline;gap:14px}
+  .path span{margin:0}
+  .mat{grid-template-columns:1fr 1fr}
+  .mat .ph:nth-child(3n+2){margin-top:0}
+  .sign{flex-direction:column;align-items:flex-start}
+}
+@media (max-width:420px){.mat{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:.01ms!important;animation:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="All Smiles Dentistry"><img src="img/logo.webp" alt="All Smiles Dentistry logo" width="187" height="56"></a>
+    <nav class="steps" aria-label="Overview">
+      <a href="#hoy"><b>01</b>Today</a>
+      <a href="#propuesta"><b>02</b>Proposal</a>
+      <a href="#material"><b>03</b>Material</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="eyebrow rv">Social media proposal</div>
+        <h1 class="serif rv" style="--d:.06s">Your social media, at the level of <em>your practice</em>.</h1>
+        <p class="lead rv" style="--d:.12s">A look at how All Smiles Dentistry shows up on Instagram today, and how it could look with your real photos and your brand colors.</p>
+        <p class="for rv" style="--d:.18s">Prepared for <b>Dr. Bianca Gonzalez</b> · Downtown Miami, FL</p>
+        <div class="path rv" style="--d:.24s">
+          <a href="#hoy"><small>01</small><span>Where you stand today</span></a>
+          <a href="#propuesta"><small>02</small><span>How it could look</span></a>
+          <a href="#material"><small>03</small><span>Material we already have</span></a>
+        </div>
+      </div>
+      <div class="collage rv" style="--d:.1s" aria-hidden="true">
+        <div class="disc"></div>
+        <div class="dots"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="arch"><img src="img/dra-gonzalez.webp" alt="" width="1100" height="1240"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 01 TODAY -->
+  <section class="blk" id="hoy">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">01 · Today</span>
+        <h2 class="serif">A great reputation, and an Instagram ready to match it</h2>
+        <p>Your patients already say it on Google. Here is how your Instagram profile and grid look today, next to the numbers from your public profiles.</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat rv"><b>4.9<small>★</small></b><span>rating on Google Maps</span></div>
+        <div class="stat rv" style="--d:.06s"><b>405</b><span>reviews on Google Maps</span></div>
+        <div class="stat rv" style="--d:.12s"><b>430</b><span>followers on Instagram</span></div>
+        <div class="stat rv" style="--d:.18s"><b>42</b><span>posts on Instagram</span></div>
+      </div>
+
+      <div class="now">
+        <div class="col">
+          <figure class="shot rv">
+            <button type="button" class="win" data-zoom="img/hoy-ig-perfil.webp" data-g="hoy" data-alt="Screenshot of the Instagram profile @all.smiles.dentistry"><img src="img/hoy-ig-perfil.webp" alt="Screenshot of the Instagram profile @all.smiles.dentistry: 430 followers, bio All Smiles Dentistry, The Premier Center for Smiles" width="692" height="200" loading="lazy"></button>
+            <figcaption><b>Instagram · profile</b><span>A clear name and bio, ready for a stronger first impression</span><small>430 followers · 42 posts</small></figcaption>
+          </figure>
+          <figure class="shot rv" style="--d:.08s">
+            <button type="button" class="win" data-zoom="img/hoy-ig-grilla.webp" data-g="hoy" data-alt="Screenshot of the Instagram post grid"><img src="img/hoy-ig-grilla.webp" alt="Screenshot of the Instagram grid: a seasonal promotion, an award badge, holiday posts, a toothbrush display and a cocktail photo" width="680" height="685" loading="lazy"></button>
+            <figcaption><b>Instagram · posts</b><span>Promotions, awards and lifestyle photos sit side by side, without one shared look</span><small>Good material to organize under a single visual line</small></figcaption>
+          </figure>
+        </div>
+        <div class="col">
+          <aside class="quote rv" style="--d:.1s">
+            <div class="eyebrow" style="color:var(--on-ink-dim)">What patients say on Google</div>
+            <div class="stars" aria-label="5 stars">★★★★★</div>
+            <blockquote lang="es">“Excelente y altamente recomendado! Me hicieron mis exámenes, radiografías, y limpieza bucal, con un plan de seguimiento. Muy eficientes, profesionales, y detallistas.”</blockquote>
+            <cite><b>Maria Andreina H.</b> · Google review</cite>
+            <small>Original review, written in Spanish.</small>
+          </aside>
+          <aside class="cad rv" style="--d:.18s">
+            <div class="eyebrow">Posting rhythm</div>
+            <h3 class="serif">October 14, 2026</h3>
+            <p>Date of the latest Instagram post; the one before it is from June 2, 2026. A steady calendar would keep the profile as active as the practice.</p>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 PROPOSAL -->
+  <section class="blk" id="propuesta">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">02 · Proposal</span>
+        <h2 class="serif">How @all.smiles.dentistry could look</h2>
+        <p>Your logo, highlights by treatment and a grid with a single visual language, in the mint, sky blue and green of your brand.</p>
+      </div>
+
+      <div class="stage">
+        <div class="notes l">
+          <div class="note rv"><h3>A profile with your brand</h3><p>Logo, specialties, address and contact in plain view, with a clear way to call or message.</p></div>
+          <div class="note rv" style="--d:.08s"><h3>Highlights by treatment</h3><p>Meet Dr. Gonzalez, implants, cosmetic dentistry, Invisalign and emergencies, easy to find.</p></div>
+          <div class="note rv" style="--d:.16s"><h3>A coherent grid</h3><p>Every piece with the same typography and palette, recognizable at a glance.</p></div>
+        </div>
+
+        <div class="phone-col rv" style="--d:.1s">
+          <div class="phone" role="button" tabindex="0" aria-label="Enlarge the proposed feed" data-zoom="img/feed.webp" data-g="prop" data-alt="Complete proposed Instagram feed for All Smiles Dentistry">
+            <div class="screen"><img src="img/feed.webp" alt="Proposed Instagram feed: profile with logo, highlights and a grid of six posts" width="1080" height="2063"></div>
+            <div class="island" aria-hidden="true"></div>
+            <div class="zoom" aria-hidden="true">Tap to enlarge</div>
+          </div>
+        </div>
+
+        <div class="notes r">
+          <div class="note rv"><h3>Messages that land</h3><p>Short texts about each treatment, with a clear invitation to book a visit.</p></div>
+          <div class="note rv" style="--d:.08s"><h3>Real photos</h3><p>Dr. Gonzalez, your team and your office, with no stock photography.</p></div>
+          <div class="note rv" style="--d:.16s"><h3>A steady rhythm</h3><p>Regular posts, so the profile always reflects the practice you run today.</p></div>
+        </div>
+      </div>
+
+      <div class="rail-head rv">
+        <h3 class="serif">Six posts, up close</h3>
+        <p>Swipe for more · tap to enlarge.</p>
+      </div>
+      <div class="rail-wrap">
+        <div class="rail rv" id="rail" aria-label="Proposed posts">
+          <button type="button" class="post" data-zoom="img/post1.webp" data-g="prop" data-alt="Proposed post 1"><img src="img/post1.webp" alt="Post 1: Meet Dr. Bianca Gonzalez" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post2.webp" data-g="prop" data-alt="Proposed post 2"><img src="img/post2.webp" alt="Post 2: The team behind every smile" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post3.webp" data-g="prop" data-alt="Proposed post 3"><img src="img/post3.webp" alt="Post 3: Your smile, designed around you" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post4.webp" data-g="prop" data-alt="Proposed post 4"><img src="img/post4.webp" alt="Post 4: Dental emergency? We accept emergencies and walk-ins" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post5.webp" data-g="prop" data-alt="Proposed post 5"><img src="img/post5.webp" alt="Post 5: Straighten your smile, without braces" width="1080" height="1350" loading="lazy"></button>
+          <button type="button" class="post" data-zoom="img/post6.webp" data-g="prop" data-alt="Proposed post 6"><img src="img/post6.webp" alt="Post 6: Book your visit today" width="1080" height="1350" loading="lazy"></button>
+        </div>
+        <div class="arrows">
+          <button type="button" id="rprev" aria-label="Previous">&larr;</button>
+          <button type="button" id="rnext" aria-label="Next">&rarr;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 MATERIAL -->
+  <section class="blk" id="material">
+    <div class="wrap">
+      <div class="sec-head rv">
+        <span class="eyebrow">03 · Material</span>
+        <h2 class="serif">Your practice already has plenty to show</h2>
+        <p>These are real photos from the All Smiles Dentistry website that we would use to give each post a face and a place.</p>
+      </div>
+      <div class="mat">
+        <figure class="ph rv"><button type="button" data-zoom="img/dra-gonzalez.webp" data-g="mat" data-alt="Dr. Bianca Gonzalez"><img src="img/dra-gonzalez.webp" alt="Portrait of Dr. Bianca Gonzalez" width="1100" height="1240" loading="lazy"></button><figcaption>Dr. Bianca Gonzalez</figcaption></figure>
+        <figure class="ph rv" style="--d:.08s"><button type="button" data-zoom="img/equipo.webp" data-g="mat" data-alt="The All Smiles Dentistry team"><img src="img/equipo.webp" alt="The All Smiles Dentistry team in front of the practice logo" width="1600" height="1134" loading="lazy"></button><figcaption>The All Smiles team</figcaption></figure>
+        <figure class="ph rv" style="--d:.16s"><button type="button" data-zoom="img/consulta.webp" data-g="mat" data-alt="Dr. Gonzalez greeting a patient"><img src="img/consulta.webp" alt="Dr. Gonzalez shaking hands with a patient in the office" width="1314" height="972" loading="lazy"></button><figcaption>Dr. Gonzalez with a patient</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOSING -->
+  <section class="close">
+    <div class="wrap">
+      <div class="close-card rv">
+        <div>
+          <h2 class="serif">Monthly management of your social media, <em>so you can focus on your patients.</em></h2>
+          <p class="lead">We take care of your Instagram: we create the content, publish it and keep your profile active, with your logo, your colors and your own photos.</p>
+        </div>
+        <div class="svc">
+          <div><b>Your Instagram</b><span>Management of @all.smiles.dentistry, with your logo and your palette.</span></div>
+          <div><b>Content and Reels</b><span>Designed posts and short videos using real photos of your practice.</span></div>
+          <div><b>Every month</b><span>An active, up-to-date profile, with nothing for you to handle.</span></div>
+        </div>
+        <div class="sign">
+          <p><b>Santiago Capelli · Ticca Mkt</b>If you are interested, we would be glad to set up a short call.</p>
+          <ul class="contact">
+            <li><a href="https://ticca.agency" target="_blank" rel="noopener">ticca.agency</a></li>
+            <li><a href="mailto:capellisantiagoemp@gmail.com">capellisantiagoemp@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <footer>
+        <span>Proposal prepared for All Smiles Dentistry · 150 SE 2nd Ave, Suite 604, Miami, FL 33131</span>
+        <span>Tel. (305) 371-6064</span>
+      </footer>
+    </div>
+  </section>
+</main>
+
+<dialog id="lb" aria-label="Enlarged image">
+  <button type="button" class="x" id="lbx" aria-label="Close">&times;</button>
+  <button type="button" class="nav prev" id="lbp" aria-label="Previous">&larr;</button>
+  <button type="button" class="nav next" id="lbn" aria-label="Next">&rarr;</button>
+  <div class="box" id="lbbox"><img id="lbimg" alt=""></div>
+  <div class="cap" id="lbcap"></div>
+</dialog>
+
+<script>
+(function(){
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* reveal */
+  var rv = document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1,rootMargin:'0px 0px -5% 0px'});
+    rv.forEach(function(el){io.observe(el)});
+  } else rv.forEach(function(el){el.classList.add('in')});
+
+  /* active nav */
+  var links = document.querySelectorAll('.steps a');
+  if('IntersectionObserver' in window){
+    var so = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    ['hoy','propuesta','material'].forEach(function(id){so.observe(document.getElementById(id))});
+  }
+
+  /* carousel */
+  var rail = document.getElementById('rail');
+  function step(d){ var p = rail.querySelector('.post'); rail.scrollBy({left:d*(p.offsetWidth+18), behavior: reduce?'auto':'smooth'}); }
+  document.getElementById('rprev').addEventListener('click', function(){ step(-1); });
+  document.getElementById('rnext').addEventListener('click', function(){ step(1); });
+
+  /* lightbox */
+  var lb=document.getElementById('lb'), img=document.getElementById('lbimg'), box=document.getElementById('lbbox'), cap=document.getElementById('lbcap');
+  var group=[], idx=0;
+  function show(){ var el=group[idx]; img.src=el.dataset.zoom; img.alt=el.dataset.alt||''; box.scrollTop=0; cap.textContent = group.length>1 ? (idx+1)+' / '+group.length : ''; document.getElementById('lbp').hidden=document.getElementById('lbn').hidden = group.length<2; }
+  function open(el){ group=[].slice.call(document.querySelectorAll('[data-zoom][data-g="'+el.dataset.g+'"]')); idx=group.indexOf(el); show(); if(lb.showModal) lb.showModal(); else lb.setAttribute('open',''); }
+  function close(){ lb.close?lb.close():lb.removeAttribute('open'); }
+  function go(d){ if(group.length<2) return; idx=(idx+d+group.length)%group.length; show(); }
+  document.querySelectorAll('[data-zoom]').forEach(function(el){
+    el.addEventListener('click',function(){open(el)});
+    el.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open(el)}});
+  });
+  document.getElementById('lbx').addEventListener('click',close);
+  document.getElementById('lbp').addEventListener('click',function(){go(-1)});
+  document.getElementById('lbn').addEventListener('click',function(){go(1)});
+  lb.addEventListener('click',function(e){if(e.target===lb||e.target===box)close()});
+  lb.addEventListener('keydown',function(e){if(e.key==='ArrowLeft')go(-1);if(e.key==='ArrowRight')go(1)});
+})();
+</script>
+</body>
+</html>
